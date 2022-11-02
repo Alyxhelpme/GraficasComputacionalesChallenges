@@ -2,6 +2,15 @@
 
 using namespace std;
 
+
+//compilation instructions
+//g++ -std=c++17 linedrawing.cpp -o lineasmagicas
+//after compiling run ./lineasmagicas
+
+//the formating of Input is as it shows:
+//0 1
+//6 4
+
 //simple method to drawing is simply using is the direct drawing of the line equation
 //however in this case we're not displaying the graphic representation itself and just the location of the points
 
@@ -18,7 +27,7 @@ void lineEquation(int x1,int x2,int y1,int y2){ //Bresenham's line algorithm
     long int D = (2*dy)-dx;
     int y = y1;
     for(int x=x1;x<=x2;x++){
-        cout<<"("<<x<<", "<<y<<")"<<endl;
+        cout<<"point("<<x<<", "<<y<<");"<<endl;
         if (D>0){
             y = y+yi;
             D = D + (2*(dy-dx));
