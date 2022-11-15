@@ -1,1 +1,1 @@
-# GraficasCOmputacionalesChallenges
+# GraficasComputacionalesChallenges
