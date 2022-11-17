@@ -41,7 +41,6 @@ function setup() {
   
   function myShearX(x, y,sx) {
     newX = x+sx*y;
-    print(newX);
     newY = y;
     return [newX,newY];
   }
@@ -57,15 +56,15 @@ function setup() {
     fill(1,255,1);
     polygon(width/2, height/2, 50, 6, myScaling, 3,3,width/2, height/1.5);
     fill(255);
-    polygon(width/2, height/2, 50, 3, null);
+    polygon(width/2, height/2, 50, 5, null);
     fill(1);
     polygon(width/2, height/2, 50, 6, myTranslate, 50, 50);
     fill(1,1,255);
-    polygon(width/2, height/2, 50, 6, myRotation, 58);
+    //polygon(width/2, height/2, 50, 6, myRotation, 58);
     fill(255,1,1);
     polygon(width/2, height/2, 50, 6, myRotatePiv, 10, 10,100);
     fill(230,230,250);
-    //polygon(width/2, height/2, 50,5, myReflection,height/2);
+    polygon(width/2, height/2, 50,5, myReflectionInY,height/2);
     fill(230,230,250);
     polygon(width, height/10, 30,4, myShearX,-1);
     fill(230,230,250);
